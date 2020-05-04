@@ -7,7 +7,7 @@ export default ({ post }) => {
     <div className="card mb-3" style={{ width: '30%'}}>
     <div className="card-body">
       <h3>{post.title}</h3>
-      <CommentList postId={post.id} />
+      <CommentList comments={post.comments} />
       <hr />
       <CommentCreate postId={post.id} />
     </div>
